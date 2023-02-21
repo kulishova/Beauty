@@ -93,6 +93,7 @@ $font-stack: Roboto, sans-serif
     position: relative
     height: 100vh
     background: url(/src/img/bg.png) no-repeat
+    background-size: 100%
     .container
         max-width: 1100px
         margin: auto
@@ -101,16 +102,19 @@ $font-stack: Roboto, sans-serif
         display: flex
         flex-direction: column
         color: #fff
+        .wrapper
+            padding-top: 192px
     .first-screen__title
         font-weight: 700
-        font-size: 48px
-        padding: 50px
+        font-size: 3em
+        padding-bottom: 50px
     .first-screen__description
         font-size: 14px
         font-weight: 400
         line-height: 20px
         padding-bottom: 50px
     .first-screen__button
+        cursor: pointer
         font: inherit
         color: inherit
         background-color: transparent
@@ -119,3 +123,44 @@ $font-stack: Roboto, sans-serif
         width: 170px
         height: 40px
         font-size: 14px
+.products
+    display: block
+    background: #EFEFEF
+    margin-top: -38vh
+    .container
+        max-width: 1100px
+        margin: auto
+        height: 100%
+        .products__title
+            font-weight: 700
+            font-size: 24px
+            line-height: 28px
+        .cards
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .card
+                display: inline-block
+                background-color: #fff
+                padding: 64px 35px 38px
+                width: 255px
+                height: 363px
+                &__img
+                &__bottom
+                &__description
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 20px
+                    text-align: center
+                &__button
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    font: inherit
+                    color: inherit
+                    border: none
+                    background-color: $primary-color
+                    border-radius: 40px
+                    width: 170px
+                    height: 40px
