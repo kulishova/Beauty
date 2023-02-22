@@ -91,19 +91,20 @@ $font-stack: Roboto, sans-serif
             padding: 40px
 .main__page
     position: relative
-    height: 100vh
     background: url(/src/img/bg.png) no-repeat
-    background-size: 100%
+    background-size: contain
+    background-position: center
+    background-color: $primary-color
     .container
         max-width: 1100px
-        margin: auto
-        height: 100%
+        margin: 0 auto
+        height: 30vw
     .first-screen_content
         display: flex
         flex-direction: column
         color: #fff
         .wrapper
-            padding-top: 192px
+            padding-top: 10em
     .first-screen__title
         font-weight: 700
         font-size: 3em
@@ -126,7 +127,7 @@ $font-stack: Roboto, sans-serif
 .products
     display: block
     background: #EFEFEF
-    margin-top: -38vh
+    padding: 147px 0
     .container
         max-width: 1100px
         margin: auto
@@ -135,16 +136,19 @@ $font-stack: Roboto, sans-serif
             font-weight: 700
             font-size: 24px
             line-height: 28px
+            padding-bottom: 38px
         .cards
             display: flex
             flex-wrap: wrap
-            justify-content: center
+            justify-content: space-between
+            align-items: center
             .card
                 display: inline-block
                 background-color: #fff
-                padding: 64px 35px 38px
-                width: 255px
-                height: 363px
+                padding: 25px 36px 25px
+                text-align: center
+                max-width: 183px
+                margin: 9px
                 &__img
                 &__bottom
                 &__description
@@ -152,6 +156,7 @@ $font-stack: Roboto, sans-serif
                     font-size: 14px
                     line-height: 20px
                     text-align: center
+                    padding: 20px 30px
                 &__button
                     cursor: pointer
                     display: flex
@@ -164,3 +169,20 @@ $font-stack: Roboto, sans-serif
                     border-radius: 40px
                     width: 170px
                     height: 40px
+                    margin-top: 20px
+.bottom-block
+    background: #EFEFEF
+    .container
+        max-width: 1100px
+        margin: auto
+        height: 100%
+        .bottom-block__cards
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            .bottom-card__connection
+                border: 1px solid black
+                box-sizing: border-box
+                .bottom__title
+                .bottom_description
+            .bottom-card__action
