@@ -172,6 +172,7 @@ $font-stack: Roboto, sans-serif
                     margin-top: 20px
 .bottom-block
     background: #EFEFEF
+    padding-bottom: 132px
     .container
         max-width: 1100px
         margin: auto
@@ -224,4 +225,52 @@ $font-stack: Roboto, sans-serif
                     height: 40px
                     font-size: 14px
                     color: #fff
-// grid-template-columns: 2fr repeat(3, 1.4fr) 2fr
+.footer
+    .container
+        max-width: 1100px
+        margin: auto
+        height: 100%
+        .footer__wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 38px
+            flex-wrap: wrap
+            .footer__social-networks
+                display: flex
+                .footer__social-network
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border: 2px solid $primary-color
+                    border-radius: 50px
+                    width: 45px
+                    height: 45px
+                    margin: 0 10px
+                    i
+                        font-size: 28px
+                        color: $primary-color
+            .footer__adress
+                font-size: 14px
+
+            .phone__number
+
+            .button__light
+                cursor: pointer
+                display: flex
+                align-items: center
+                justify-content: center
+                font: inherit
+                color: inherit
+                background-color: transparent
+                border: 2px solid $primary-color
+                border-radius: 40px
+                width: 170px
+                height: 40px
+    .footer__copyright
+        background: #EFEFEF
+        padding: 25px
+        span
+            font-size: 12px
+            color: #828282
